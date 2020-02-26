@@ -4,6 +4,26 @@
 
 // To compile: gcc solution.c -pthread -lm -O3 -Werror -o solution
 
+
+/*
+ *  Calculates the ith exponential power of the array arr with array length N.
+ */
+int exponential_power(int i, int arr[], int N) {
+    int power = 0;
+
+    return power;
+}
+
+/*
+ *  Prints the array arr with array length N to console.
+ *  This is a debug method! Do NOT call this in the final submission code
+ */
+void print_array(int A[], int N) {
+    printf("[%d, " , A[0]);
+        for (int i = 1; i < N - 1; i++) printf("%d, " , A[i]);
+        printf("%d]" , A[N - 1]);
+}
+
 int main(int argc, char** argv) {
     int T; // Number of test cases
     scanf("%d", &T);
@@ -21,11 +41,9 @@ int main(int argc, char** argv) {
             xn1 = xn; yn1 = yn;
             A[i] = (xn + yn) % F;
         }
+        print_array(A, N);
 
-        // Check array print
-        printf("[%d, " , A[0]);
-        for (int i = 1; i < N - 1; i++) printf("%d, " , A[i]);
-        printf("%d]" , A[N - 1]);
+        // TODO - Calculate exponential power
 
     }
     return 0;
