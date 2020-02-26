@@ -53,6 +53,7 @@ int main(int argc, char** argv) {
             A[i] = (xn + yn) % F;
         }
 
+        // TODO - Find out why this algorithm fails for the test sets but not the visible set.
         long result = total_exponential_power(K, A, N) % 1000000007;
         printf("Case #%d: %ld\n", z, result);
 
